@@ -1,0 +1,305 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #252525;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    background: #0866ee;
+    color: white;
+    padding: 12px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+/* Anh bia */
+.hero {
+    height: 350px;
+
+    background:
+        linear-gradient(#0005, #0004),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80")
+        center / cover;
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin: 4px;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    background: #ffc107;
+    color: black;
+}
+
+.btn-white {
+    border: 1px solid white;
+    color: white;
+}
+
+/* Ba the gioi thieu */
+.features {
+    background: #f7f7fb;
+    padding: 35px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+.feature .icon {
+    font-size: 35px;
+}
+.icon-sun {
+    color: #f6ca27;
+}
+
+.icon-fish {
+    color: #70b9ed;
+}
+
+.icon-cable {
+    color: #59d9bd;
+}
+
+.feature h3 {
+    margin: 8px 0;
+}
+
+.feature p {
+    font-size: 12px;
+    color: #666;
+}
+.section {
+    padding: 20px 0;
+}
+
+.section-title {
+    color: #0872e9;
+    text-align: center;
+    font-size: 26px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body h3 {
+    font-size: 16px;
+}
+
+.card-body p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+.tag {
+    display: inline-block;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.blue {
+    background: #0875e8;
+}
+
+.green {
+    background: #198754;
+}
+.food-section {
+    background: #f7f7fb;
+    padding: 20px 0;
+}
+
+.food-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.food-image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.food-item {
+    margin-bottom: 22px;
+}
+
+.food-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.food-item p {
+    font-size: 12px;
+    color: #666;
+}
+
+.check {
+    color: #20b486;
+    margin-right: 7px;
+}
+footer {
+    background: #20252d;
+    color: white;
+    padding: 22px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 30px;
+}
+
+footer h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer p,
+footer a {
+    color: white;
+    font-size: 12px;
+}
+
+footer a {
+    display: block;
+}
+.social {
+    display: flex;
+    gap: 5px;
+}
+
+.social a {
+    padding: 3px 8px;
+    border-radius: 15px;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.twitter {
+    background: #16885f;
+}
+
+.youtube {
+    background: #df3346;
+}
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feature-grid,
+    .destination-grid,
+    .food-layout,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
